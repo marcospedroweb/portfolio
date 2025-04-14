@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .underline-center {
+    @apply relative 
+           before:content-[''] 
+           before:absolute 
+           before:bottom-[-8px] 
+           before:left-1/2 
+           before:-translate-x-1/2 
+           before:w-24 
+           before:h-1 
+           before:bg-[#3DA661];
+  }
+}
