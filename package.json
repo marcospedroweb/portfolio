@@ -9,10 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4.0.1",
     "framer-motion": "^12.6.2",
     "lucide-react": "^0.486.0",
-    "next": "15.1.6",
+    "next": "^15.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-simple-typewriter": "^5.0.1"
