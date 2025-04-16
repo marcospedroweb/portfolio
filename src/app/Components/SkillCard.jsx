@@ -71,7 +71,7 @@ const SkillCard = ({ name = 'html' }) => {
     >
       {Icon ? (
         <Icon
-          className={`w-11 h-11 transition-colors duration-300 ease-in-out ${
+          className={`w-11 h-11 transition-colors duration-200 ease-in ${
             hovered
               ? hoverColors[iconName]
               : isTextIcon
