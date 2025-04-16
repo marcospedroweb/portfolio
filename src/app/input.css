@@ -7,7 +7,7 @@
     @apply relative 
            before:content-[''] 
            before:absolute 
-           before:bottom-[-8px] 
+           before:bottom-[-10px] 
            before:left-1/2 
            before:-translate-x-1/2 
            before:w-24 
