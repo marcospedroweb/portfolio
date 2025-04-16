@@ -1,4 +1,5 @@
 import AboutMe from "./sections/AboutMe";
+import Certifications from "./sections/Certifications";
 import { Skills } from "./sections/Skills";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       <main className="w-screen">
         <AboutMe />
         <Skills />
+        <Certifications />
       </main>
     </div>
   );

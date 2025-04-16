@@ -2,8 +2,8 @@ import React from 'react'
 
 const AboutMe = () => {
   return (
-    <div className='bg-[#1E1E1E] container py-16 px-6'>
-      <div className="container text-white text-center">
+    <div className='bg-[#1E1E1E] py-16'>
+      <div className="container text-white text-center px-6">
         <h3 className="font-bold text-5xl mb-8 position w-fit mx-auto
         underline-center      
         ">Sobre mim</h3>
@@ -24,7 +24,6 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-
     </div >
   )
 }
