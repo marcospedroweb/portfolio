@@ -5,7 +5,7 @@ import { Skills } from "./sections/Skills";
 export default function Home() {
   return (
     <div>
-      <main className="w-screen">
+      <main className="w-full">
         <AboutMe />
         <Skills />
         <Certifications />

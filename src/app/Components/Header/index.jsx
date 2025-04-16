@@ -11,7 +11,7 @@ export function Header() {
   const isMobile = useIsMobile();
 
   return (
-    <header className="md:w-screen h-screen bg-hero-custom">
+    <header className="w-full h-screen bg-hero-custom">
       <div className="sticky top-0 bg-[#212121] z-10 ">
         <nav className="flex flex-row justify-center md:justify-between items-center md:container py-3 md:gap-0 w-full max-md:px-5">
           <div className="flex flex-row items-center justify-between max-md:w-full">
