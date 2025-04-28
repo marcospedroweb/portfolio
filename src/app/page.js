@@ -1,5 +1,6 @@
 import AboutMe from "./sections/AboutMe";
 import Certifications from "./sections/Certifications";
+import Experience from "./sections/Experience";
 import { Skills } from "./sections/Skills";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         <AboutMe />
         <Skills />
         <Certifications />
+        <Experience />
       </main>
     </div>
   );
