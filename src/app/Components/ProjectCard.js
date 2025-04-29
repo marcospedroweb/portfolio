@@ -1,0 +1,29 @@
+import React from 'react'
+import { default as IconHtml5 } from '@/app/icons/html5.svg';
+
+const ProjectCard = ({ title, icons, infoProject }) => {
+  return (
+    <div className="relative w-full h-64 bg-[url('/imgs/project1.png')] bg-cover bg-center group cursor-pointer">
+      <div className="absolute inset-0 bg-black bg-opacity-60 transition-all duration-200 ease-in group-hover:bg-opacity-80"></div>
+
+      <div className="absolute inset-0 flex flex-col items-center justify-center">
+        <div className="transition-opacity duration-300 group-hover:opacity-0 flex flex-col items-center gap-2">
+          <h4 className="text-white text-xl font-semibold transition-all duration-300 group-hover:opacity-0">
+            Nome do Projeto
+          </h4>
+          <div className={'flex gap-1'}>
+            <IconHtml5 className="w-6 h-6 fill-[#3DA661]" />
+          </div>
+        </div>
+
+      </div>
+      <div className="absolute inset-0 flex flex-col items-center justify-center">
+        <p className="text-white text-xl font-semibold opacity-0 transition-all duration-300 group-hover:opacity-100">
+          Saber mais
+        </p>
+      </div>
+    </div>
+  )
+}
+
+export default ProjectCard

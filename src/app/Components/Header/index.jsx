@@ -12,7 +12,7 @@ export function Header() {
 
   return (
     <header className="w-full h-screen bg-hero-custom">
-      <div className="sticky top-0 bg-[#212121] z-10 ">
+      <div className="fixed top-0 left-0 right-0 bg-[#212121] z-10 ">
         <nav className="flex flex-row justify-center md:justify-between items-center md:container py-3 md:gap-0 w-full max-md:px-5">
           <div className="flex flex-row items-center justify-between max-md:w-full">
             <h1 className="text-white text-[2.5rem] font-bold">
@@ -41,10 +41,7 @@ export function Header() {
 
         <div className="border-t border-[rgba(111,110,110,0.5)]"></div>
       </div>
-      <div
-        className="container relative flex justify-center items-center h-[calc(100vh-85px)] md:h-[calc(100%-85.1px)] max-md:text-center"
-        // style={{ height: 'calc(100% - 85.1px)' }}
-      >
+      <div className="container relative flex justify-center items-center h-screen max-md:text-center">
         <div className="flex flex-col-reverse md:flex-row justify-center md:justify-between items-center w-full">
           <div className="text-white">
             <span className="text-[1.5rem] md:text-[2.4rem] font-medium font-[Montserrat]">

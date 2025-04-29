@@ -35,9 +35,7 @@ export default function RootLayout({ children }) {
 
       <body className={`${roboto.className} overflow-x-hidden`}>
         <Header />
-        <main>
-          {children}
-        </main>
+        {children}
       </body>
     </html>
   );
