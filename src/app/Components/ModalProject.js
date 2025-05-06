@@ -33,7 +33,7 @@ const ModalProject = ({ isOpen, setIsOpen }) => {
             </h2>
             <button
               onClick={() => setIsOpen(false)}
-              className="text-gray-500 hover:text-red-500 text-4xl font-bold p-2"
+              className="text-gray-500 hover:text-red-500 text-4xl font-bold px-2"
             >
               &times;
             </button>
