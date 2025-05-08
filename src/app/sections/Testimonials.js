@@ -8,7 +8,7 @@ import TestimonialsCard from "../Components/TestimonialsCard";
 
 export function Testimonials() {
   return (
-    <div className='bg-[#1E1E1E] pt-16 pb-10 mb-20'>
+    <div className='bg-[#1E1E1E] pt-16 pb-16'>
       <div className="container text-center px-6">
         <MainHeading text="Depoimentos" />
         <div className="flex flex-row gap-4">
