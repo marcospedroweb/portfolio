@@ -12,12 +12,16 @@ export function Header() {
 
   return (
     <header className="w-full h-screen bg-hero-custom">
-      <div className="fixed top-0 left-0 right-0 bg-[#212121] z-10 ">
-        <nav className="flex flex-row justify-center md:justify-between items-center md:container py-3 md:gap-0 w-full max-md:px-5">
+      <div className="fixed top-0 left-0 right-0 bg-[#212121] z-10 w-full">
+        <nav className="flex flex-col md:flex-row justify-center md:justify-between items-center md:container py-3 md:gap-0 w-full max-md:px-5">
+          <h1 className="sr-only">Marcos Pedro</h1>
+          <span className="text-white text-[2.5rem] font-bold md:hidden">
+            &lt;<span className="sr-only">Marcos Pedro</span>/&gt;
+          </span>
           <div className="flex flex-row items-center justify-between max-md:w-full">
-            <h1 className="text-white text-[2.5rem] font-bold">
+            <span className="text-white text-[2.5rem] font-bold hidden md:block">
               &lt;<span className="sr-only">Marcos Pedro</span>/&gt;
-            </h1>
+            </span>
             <a
               href="#"
               className="bg-gradient-to-r from-[#53F188] via-[#179541] to-[#179541] rounded-xl px-4 py-2 font-bold text-xl font-[Montserrat] text-center md:hidden"

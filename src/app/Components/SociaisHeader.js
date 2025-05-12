@@ -5,8 +5,8 @@ import { IconWhatsapp } from '../../../public/icons/IconWhatsapp'
 
 const SociaisHeader = () => {
   return (
-    <div className='flex flex-col justify-center items-center absolute right-[-64px] bottom-16 gap-3'>
-      <span className='inline-block w-1 h-20 bg-[#1D753B] mb-2'></span>
+    <div className='flex flex-col justify-center items-center absolute right-8 md:right-[-64px] bottom-8 md:bottom-16 gap-3'>
+      <span className='w-1 h-20 bg-[#1D753B] mb-2 hidden md:inline-block'></span>
       <a href="">
         <IconLinkedin className='h-6 hover:text-gray-400' />
       </a>

@@ -31,8 +31,8 @@ const Experience = () => {
         </div>
         {section === 'Profissional' ? <div className="flex flex-col gap-4">
           <ExperienceCard
-            date={{ start: new Date("2023-10-01") }}
-            actual={true}
+            date={{ start: new Date("2023-10-01"), end: new Date("2025-04-30") }}
+            actual={false}
             title="Desenvolvedor FullStack"
             company="Scapets Brasil"
             jobType="Tempo integral"

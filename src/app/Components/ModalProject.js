@@ -15,7 +15,7 @@ const ModalProject = ({ isOpen, setIsOpen }) => {
       <div
         ref={modalRef}
         onClick={(e) => e.stopPropagation()}
-        className="bg-[#222] rounded-lg overflow-auto shadow-lg w-full max-w-[80vw] max-h-[90vh] flex flex-col md:flex-row items-center md:items-start relative p-8 gap-6 cursor-default"
+        className="bg-[#222] rounded-lg overflow-auto shadow-lg w-full max-w-[80vw] max-h-[90vh] flex flex-col md:flex-row items-center md:items-start relative p-8 gap-6 cursor-default max-sm:relative"
       >
         <div className="w-full md:w-[60rem] h-[25rem] relative">
           <Image
@@ -25,15 +25,21 @@ const ModalProject = ({ isOpen, setIsOpen }) => {
             className="object-cover rounded"
           />
         </div>
+        <button
+          onClick={() => setIsOpen(false)}
+          className="text-gray-500 hover:text-red-500 text-4xl font-bold px-2 md:hidden max-sm:absolute max-sm:top-0 max-sm:right-0"
+        >
+          &times;
+        </button>
 
-        <div className="w-full md:w-1/2 text-start">
-          <div className="flex justify-between items-center">
+        <div className="w-full md:w-1/2 text-center md:text-start">
+          <div className="flex justify-center md:justify-between items-center">
             <h2 className="text-2xl font-bold text-[#3DA661] mb-0">
               Nome do Projeto
             </h2>
             <button
               onClick={() => setIsOpen(false)}
-              className="text-gray-500 hover:text-red-500 text-4xl font-bold px-2"
+              className="text-gray-500 hover:text-red-500 text-4xl font-bold px-2 hidden md:block"
             >
               &times;
             </button>
@@ -50,8 +56,8 @@ const ModalProject = ({ isOpen, setIsOpen }) => {
             et maiores culpa officiis cum reiciendis assumenda.
           </p>
 
-          <div className="mt-5">
-            <h3 className="text-lg font-semibold text-white mb-1">
+          <div className="mt-5 max-sm:text-start">
+            <h3 className="text-mobile-sm text-xl md:text-lg font-semibold text-white mb-1">
               Ferramentas usadas:
             </h3>
             <ul className="list-disc list-inside text-[rgba(255,255,255,0.7)] text-sm">
