@@ -25,6 +25,7 @@ export function Testimonials() {
                   slidesPerView: 2,
                 },
               }}
+              className='h-full md:h-fit'
             >
 
               <SwiperSlide>

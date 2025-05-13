@@ -31,9 +31,9 @@ h2 > span+span{
 }
 
 .swiper-pagination {
-  /* bottom: -1rem !important;  */
   text-align: center;
 }
+
 
 .swiper-pagination-bullet {
   background: #BCBCBC !important; /* Cor normal */
