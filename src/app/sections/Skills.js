@@ -13,7 +13,7 @@ const skills = [
 export function Skills() {
   return (
     <div className='bg-[#222] py-24'>
-      <div className="container">
+      <div className="container scroll-mt-32" id="Habilidades">
         <MainHeading text="Habilidades" />
         <div className="flex flex-wrap gap-3 justify-center items-center max-w-4xl mx-auto">
           {skills.map((skill) => (

@@ -11,7 +11,7 @@ const Experience = () => {
 
   return (
     <div className='bg-[#1E1E1E] py-16'>
-      <div className="container text-center px-6">
+      <div className="container text-center px-6 scroll-mt-32" id="Experiência">
         <MainHeading text="Experiência" />
         <div className="flex justify-center items-center gap-11 mb-14">
           <h4

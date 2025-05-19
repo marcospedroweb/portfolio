@@ -12,7 +12,7 @@ const LinksNav = () => {
       {['Sobre', 'Habilidades', 'Certificados', 'Experiência', 'Projetos'].map((item) => (
         <li key={item}>
           <a
-            href="#"
+            href={`#${item}`}
             className={`relative inline-block px-2 py-1
              ${!isMobile ? `text-[#DCDCDC]
                 before:content-[''] before:absolute before:bottom-0 before:left-0

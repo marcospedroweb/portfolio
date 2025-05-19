@@ -9,7 +9,7 @@ import { IconWhatsapp } from '../../../public/icons/IconWhatsapp'
 const Footer = () => {
   return (
     <div className='bg-[#252525] py-56'>
-      <div className="container text-center px-6">
+      <div className="container text-center px-6 scroll-mt-32" id="Contato">
         <MainHeading text="Entre em contato" />
         <div className='flex flex-col md:flex-row flex-wrap justify-center items-center gap-8'>
           <IconFooter icon={<IconLinkedin className='h-10 fill-[#3DA661]' />} title={'Linkedin'} text={'@marcospedroalves'} link={'https://www.linkedin.com/in/marcospedroalves/'} />
