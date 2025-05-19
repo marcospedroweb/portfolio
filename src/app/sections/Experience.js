@@ -43,19 +43,6 @@ const Experience = () => {
             - Uso de tecnologias como TypeScript.
               `}
           />
-
-          <ExperienceCard
-            date={{ start: new Date("2022-10-01"), end: new Date("2023-06-01") }}
-            actual={false}
-            title="Desenvolvedor FrontEnd"
-            company="Fox Marketing Digital"
-            jobType="Estágio"
-            description={`
-            - Desenvolvimento de sites utilizando HTML, CSS, JavaScript.
-            - Integração de APIs para garantir conectividade e funcionalidade nas aplicações.
-            - Configuração e integração de ferramentas de análise e marketing, como Google Tag Manager (GTM) e - Meta Pixel, para monitoramento de desempenho e otimização de campanhas.
-            `}
-          />
           <ExperienceCard
             date={{ start: new Date("2022-10-01"), end: new Date("2023-06-01") }}
             actual={false}
@@ -69,6 +56,18 @@ const Experience = () => {
             - Implementação de novos componentes e ajustes atendendo às necessidades contínuas do cliente.
             - Uso de tecnologias como HTML, CSS, JavaScript e Bootstrap.
           `}
+          />
+          <ExperienceCard
+            date={{ start: new Date("2022-10-01"), end: new Date("2023-06-01") }}
+            actual={false}
+            title="Desenvolvedor FrontEnd"
+            company="Fox Marketing Digital"
+            jobType="Estágio"
+            description={`
+            - Desenvolvimento de sites utilizando HTML, CSS, JavaScript.
+            - Integração de APIs para garantir conectividade e funcionalidade nas aplicações.
+            - Configuração e integração de ferramentas de análise e marketing, como Google Tag Manager (GTM) e - Meta Pixel, para monitoramento de desempenho e otimização de campanhas.
+            `}
           />
         </div> : <div className="flex flex-col gap-4">
           <ExperienceCard
