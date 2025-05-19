@@ -6,7 +6,7 @@ const AboutMe = () => {
     <div className='bg-[#1E1E1E] py-16'>
       <div className="container text-white text-center px-6 scroll-mt-32" id="Sobre">
         <MainHeading text="Sobre mim" />
-        <p className='text-[rgba(255, 255, 255, 0.5)] mb-6 max-w-lg mx-auto'> Sou desenvolvedor FullStack com mais de 2 anos de experiência criando interfaces modernas e sistemas robustos. Tenho paixão por transformar ideias em soluções digitais funcionais e bem estruturadas. Estou sempre em busca de aprender algo novo, melhorar meu código e entregar valor real através de cada projeto.
+        <p className='text-[rgba(255, 255, 255, 0.5)] mb-6 max-w-lg mx-auto'> Sou desenvolvedor FullStack com mais de 2 anos de experiência criando interfaces modernas e sistemas. Tenho paixão por transformar ideias em soluções digitais funcionais e bem estruturadas. Estou sempre em busca de aprender algo novo, melhorar minhas habilidades e conseguir o melhor desempenho em um projeto.
         </p>
         <div className='flex flex-wrap justify-center items-center gap-4 divide-y md:divide-y-0 md:divide-x-2 divide-[#222]'>
           <div className='flex flex-col md:px-8'>
