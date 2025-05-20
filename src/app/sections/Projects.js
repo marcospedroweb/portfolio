@@ -8,9 +8,7 @@ const Projects = () => {
       <div className="container text-center px-6 scroll-mt-32" id="Projetos">
         <MainHeading text="Projetos" />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          <ProjectCard title={"Adventurer's Journal"} icons={['Html5', 'Css3', 'JavaScript', 'ReactJS', 'Bootstrap']} />
         </div>
       </div>
     </div>

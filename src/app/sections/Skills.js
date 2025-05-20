@@ -2,7 +2,7 @@ import React from 'react'
 import SkillCard from '../Components/SkillCard'
 import MainHeading from '../Components/MainHeading';
 
-const skills = [
+export const skills = [
   'Html5', 'Css3', 'JavaScript', 'TypeScript',
   'ReactJS', 'NextJS', 'NodeJS', 'NestJS',
   'ViteJS', 'Redux', 'Bootstrap', 'PHP',

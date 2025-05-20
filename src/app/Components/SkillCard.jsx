@@ -33,7 +33,7 @@ const icons = {
   sql: IconSql,
 };
 
-const SkillCard = ({ name = 'html' }) => {
+const SkillCard = ({ name = 'html', size = 'default' }) => {
   const [hovered, setHovered] = useState(false);
   const iconName = name ? name.toLowerCase() : '';
   const Icon = icons[iconName];
@@ -63,26 +63,38 @@ const SkillCard = ({ name = 'html' }) => {
     'bootstrap',
   ].includes(iconName);
 
+  const isSmall = size === 'small';
+
   return (
     <div
-      className="w-24 h-28 bg-[#323232] rounded-tr-2xl flex flex-col items-center justify-center border-b-4 border-b-[#3DA661]"
+      className={`${
+        isSmall
+          ? 'w-6 h-6'
+          : 'w-24 h-28 bg-[#323232] rounded-tr-2xl flex flex-col items-center justify-center border-b-4 border-b-[#3DA661]'
+      }`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
       {Icon ? (
         <Icon
-          className={`w-11 h-11 transition-colors duration-200 ease-in ${
-            hovered
+          className={`transition-colors duration-200 ease-in ${
+            isSmall
+              ? 'fill-[#3DA661] text-[#3DA661]'
+              : hovered
               ? hoverColors[iconName]
               : isTextIcon
               ? 'text-white'
               : 'fill-white'
-          }`}
+          } ${isSmall ? 'w-6 h-6' : 'w-11 h-11'}`}
         />
       ) : (
-        <span className="text-white">?</span>
+        !isSmall && <span className="text-white">?</span>
       )}
-      <p className="text-white text-xs font-medium mt-2 text-center">{name}</p>
+      {!isSmall && (
+        <p className="text-white text-xs font-medium mt-2 text-center">
+          {name}
+        </p>
+      )}
     </div>
   );
 };

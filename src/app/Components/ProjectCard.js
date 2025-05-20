@@ -2,8 +2,10 @@
 import { default as IconHtml5 } from '@/app/icons/html5.svg';
 import ModalProject from './ModalProject';
 import { useState } from 'react';
+import { skills } from '../sections/Skills';
+import SkillCard from './SkillCard';
 
-const ProjectCard = ({ title, icons, infoProject }) => {
+const ProjectCard = ({ title, icons = [], infoProject }) => {
   const [isOpen, setIsOpen] = useState(false);
 
 
@@ -14,10 +16,14 @@ const ProjectCard = ({ title, icons, infoProject }) => {
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <div className="transition-opacity duration-300 group-hover:opacity-0 flex flex-col items-center gap-2">
           <h4 className="text-white text-xl font-semibold transition-all duration-300 group-hover:opacity-0">
-            Nome do Projeto
+            {title}
           </h4>
           <div className={'flex gap-1'}>
-            <IconHtml5 className="w-6 h-6 fill-[#3DA661]" />
+            {skills.map((skill) => {
+              if (icons.includes(skill))
+                return <SkillCard key={skill} name={skill} size='small' />
+            }
+            )}
           </div>
         </div>
 
