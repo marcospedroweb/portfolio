@@ -5,12 +5,13 @@ import { useState } from 'react';
 import { skills } from '../sections/Skills';
 import SkillCard from './SkillCard';
 
-const ProjectCard = ({ title, icons = [], infoProject }) => {
+const ProjectCard = ({ icons = [], infoProject = {} }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const { image, title, date, description, linkProject, linkGithub } = infoProject
 
 
   return (
-    <div className="relative w-full h-64 bg-[url('/imgs/project1.png')] bg-cover bg-center group cursor-pointer" onClick={() => setIsOpen(true)}>
+    <div className={`relative w-full h-64 bg-cover bg-center group cursor-pointer`} onClick={() => setIsOpen(true)} style={{ backgroundImage: `url('/imgs/${image}')` }}>
       <div className="absolute inset-0 bg-black bg-opacity-60 transition-all duration-200 ease-in group-hover:bg-opacity-80"></div>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -18,11 +19,18 @@ const ProjectCard = ({ title, icons = [], infoProject }) => {
           <h4 className="text-white text-xl font-semibold transition-all duration-300 group-hover:opacity-0">
             {title}
           </h4>
-          <div className={'flex gap-1'}>
-            {skills.map((skill) => {
-              if (icons.includes(skill))
-                return <SkillCard key={skill} name={skill} size='small' />
+          <div className={'flex items-center gap-1'}>
+            {skills
+              .filter((skill) => icons.includes(skill))
+              .slice(0, 4)
+              .map((skill) => (
+                <SkillCard key={skill} name={skill} size="small" />
+              ))
             }
+            {icons.length > 4 && (
+              <span className="text-[#3DA661] font-bold text-2xl">
+                +{icons.length - 4}
+              </span>
             )}
           </div>
         </div>
@@ -33,7 +41,7 @@ const ProjectCard = ({ title, icons = [], infoProject }) => {
           Saber mais
         </p>
       </div>
-      {isOpen && <ModalProject isOpen={isOpen} setIsOpen={setIsOpen} />}
+      {isOpen && <ModalProject isOpen={isOpen} setIsOpen={setIsOpen} info={infoProject} icons={icons} />}
 
     </div>
   )
