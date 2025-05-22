@@ -13,41 +13,42 @@ const ModalProject = ({ isOpen, setIsOpen, info, icons }) => {
   return (
     <div
       onClick={() => setIsOpen(false)}
-      className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 cursor-pointer"
+      className="fixed inset-0 z-50 flex items-center justify-center p-2 bg-black bg-opacity-50 cursor-pointer md:p-4"
     >
       <div
         ref={modalRef}
         onClick={(e) => e.stopPropagation()}
-        className="bg-[#222] rounded-lg overflow-auto shadow-lg w-full max-w-[80vw] max-h-[90vh] flex flex-col md:flex-row items-center md:items-start relative p-8 gap-6 cursor-default max-sm:relative"
+        className="bg-[#222] rounded-lg overflow-auto shadow-lg w-full max-w-[80vw] max-h-[90vh] flex flex-col md:flex-row items-center md:items-start relative p-5 md:p-8 gap-6 cursor-default max-sm:relative"
       >
-        <div className="w-full md:w-[60rem] h-[25rem] relative border-2 border-[rgba(255,255,255,0.2)] rounded-sm shadow-md">
+        <div className="w-full md:w-[60rem] aspect-[4/3] md:aspect-auto md:h-[25rem] relative border-2 border-[rgba(255,255,255,0.2)] rounded-sm shadow-md z-0">
+
           <Image
             src={`/imgs/${image}`}
             alt="Imagem do projeto"
             fill
-            className="object-cover rounded"
+            className="object-cover rounded sm:h-full"
           />
         </div>
         <button
           onClick={() => setIsOpen(false)}
-          className="text-gray-500 hover:text-red-500 text-4xl font-bold px-2 md:hidden max-sm:absolute max-sm:top-0 max-sm:right-0"
+          className="z-50 px-2 text-5xl font-bold text-white md:text-gray-500 md:text-4xl hover:text-red-500 md:hidden max-sm:absolute max-sm:top-0 max-sm:right-0"
         >
           &times;
         </button>
 
-        <div className="w-full md:w-1/2 text-center md:text-start">
-          <div className="flex justify-center md:justify-between items-center">
+        <div className="w-full text-center md:w-1/2 md:text-start">
+          <div className="flex items-center justify-center md:justify-between">
             <h2 className="text-2xl font-bold text-[#3DA661] mb-0">
               {title}
             </h2>
             <button
               onClick={() => setIsOpen(false)}
-              className="text-gray-500 hover:text-red-500 text-4xl font-bold px-2 hidden md:block"
+              className="hidden px-2 text-4xl font-bold text-gray-500 hover:text-red-500 md:block"
             >
               &times;
             </button>
           </div>
-          <span className="text-white font-medium text-sm mb-4 inline-block">
+          <span className="inline-block mb-4 text-sm font-medium text-white">
             {formatDateRange(date.start, date.end)}
           </span>
           <p className="text-[rgba(255,255,255,0.7)] text-sm">
@@ -55,7 +56,7 @@ const ModalProject = ({ isOpen, setIsOpen, info, icons }) => {
           </p>
 
           <div className="mt-5 max-sm:text-start">
-            <h3 className="text-mobile-sm text-xl md:text-lg font-semibold text-white mb-1">
+            <h3 className="mb-1 text-xl font-semibold text-white text-mobile-sm md:text-lg">
               Ferramentas usadas:
             </h3>
             <ul className="list-disc list-inside text-[rgba(255,255,255,0.7)] text-sm">
@@ -71,7 +72,7 @@ const ModalProject = ({ isOpen, setIsOpen, info, icons }) => {
             {linkProject && <a
               href={linkProject}
               target="_blank"
-              className="px-4 py-2 bg-green-800 text-white font-semibold rounded hover:bg-green-700 transition"
+              className="px-4 py-2 font-semibold text-white transition bg-green-800 rounded hover:bg-green-700"
             >
               Ver Projeto
             </a>}
@@ -79,7 +80,7 @@ const ModalProject = ({ isOpen, setIsOpen, info, icons }) => {
             {linkGithub && <a
               href={linkGithub}
               target="_blank"
-              className="px-4 py-2 bg-green-800 text-white font-semibold rounded hover:bg-green-700 transition"
+              className="px-4 py-2 font-semibold text-white transition bg-green-800 rounded hover:bg-green-700"
             >
               GitHub
             </a>}

@@ -7,16 +7,16 @@ import SkillCard from './SkillCard';
 
 const ProjectCard = ({ icons = [], infoProject = {} }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const { image, title, date, description, linkProject, linkGithub } = infoProject
+  const { image, title } = infoProject
 
 
   return (
     <div className={`relative w-full h-64 bg-cover bg-center group cursor-pointer`} onClick={() => setIsOpen(true)} style={{ backgroundImage: `url('/imgs/${image}')` }}>
-      <div className="absolute inset-0 bg-black bg-opacity-60 transition-all duration-200 ease-in group-hover:bg-opacity-80"></div>
+      <div className="absolute inset-0 transition-all duration-200 ease-in bg-black bg-opacity-60 group-hover:bg-opacity-80"></div>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <div className="transition-opacity duration-300 group-hover:opacity-0 flex flex-col items-center gap-2">
-          <h4 className="text-white text-xl font-semibold transition-all duration-300 group-hover:opacity-0">
+        <div className="flex flex-col items-center gap-2 transition-opacity duration-300 group-hover:opacity-0">
+          <h4 className="text-xl font-semibold text-white transition-all duration-300 group-hover:opacity-0">
             {title}
           </h4>
           <div className={'flex items-center gap-1'}>
@@ -37,7 +37,7 @@ const ProjectCard = ({ icons = [], infoProject = {} }) => {
 
       </div>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <p className="text-white text-xl font-semibold opacity-0 transition-all duration-300 group-hover:opacity-100">
+        <p className="text-xl font-semibold text-white transition-all duration-300 opacity-0 group-hover:opacity-100">
           Saber mais
         </p>
       </div>

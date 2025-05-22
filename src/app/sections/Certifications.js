@@ -7,7 +7,7 @@ const Certifications = () => {
     <div className='bg-[#222] py-24 pb-40'>
       <div className="container px-7 scroll-mt-32" id="Certificados">
         <MainHeading text="Certificações" />
-        <div className='flex flex-wrap justify-center gap-6'>
+        <div className='flex flex-wrap justify-center gap-2 md:gap-6'>
           <CertificationCard name={'Tailwind CSS'} company={'ORIGAMID'} date={new Date('2025-03-27')} time={"16h"} link={"https://www.origamid.com/certificate/81038a1c"} />
           <CertificationCard name={'Next.js'} company={'ORIGAMID'} date={new Date('2024-09-12')} time={"22h"} link={"https://www.origamid.com/certificate/b8413535"} />
           <CertificationCard name={'Redux com React'} company={'ORIGAMID'} date={new Date('2024-11-12')} time={"16h"} link={"https://www.origamid.com/certificate/76535e6b"} />
