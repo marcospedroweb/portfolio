@@ -9,7 +9,7 @@ import TestimonialsCard from "../Components/TestimonialsCard";
 export function Testimonials() {
   return (
     <div className='bg-[#1E1E1E] pt-16 pb-16'>
-      <div className="container text-center px-6">
+      <div className="container px-6 text-center">
         <MainHeading text="Depoimentos" />
         <div className="flex flex-row gap-4">
           <div className="w-full">
@@ -29,24 +29,21 @@ export function Testimonials() {
             >
 
               <SwiperSlide>
-                <TestimonialsCard user={'Fulano Ciclano'} role={'Desenvolvedor'} team_role={"Parceiro de equipe"} testimonial={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus corporis molestiae ab accusamus itaque eveniet cum in repudiandae autem, sed deserunt harum quam voluptatum soluta delectus? Nostrum quidem inventore reprehenderit explicabo ex debitis consectetur, consequuntur placeat nam, sunt numquam possimus amet, deleniti veniam autem vero? Corporis neque doloribus repudiandae est.'} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <TestimonialsCard user='Beltrano Fulano' role={'Tech leader'} team_role={'Lider de equipe'} testimonial={'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore earum, quidem quo veritatis nam rem dolor omnis incidunt laboriosam itaque optio temporibus, quaerat, molestiae esse. Recusandae, quo voluptatem? Earum fuga ullam voluptates culpa optio aliquid totam necessitatibus voluptatibus, iure magnam praesentium repudiandae asperiores tempora, aut veritatis neque quibusdam, pariatur cum. Totam eos iusto cupiditate ea sunt at nemo deserunt aut nam ipsa officiis natus aliquid, autem, rerum temporibus eius laudantium. Accusantium omnis aperiam vero, excepturi explicabo id ducimus, tenetur, fuga consequatur harum consectetur quis est sint commodi aut ullam eaque! Sequi veniam dolore, impedit eveniet ducimus sunt suscipit natus non?'} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <TestimonialsCard user={'Fulano Ciclano'} role={'Desenvolvedor'} team_role={"Parceiro de equipe"} testimonial={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus corporis molestiae ab accusamus itaque eveniet cum in repudiandae autem, sed deserunt harum quam voluptatum soluta delectus? Nostrum quidem inventore reprehenderit explicabo ex debitis consectetur, consequuntur placeat nam, sunt numquam possimus amet, deleniti veniam autem vero? Corporis neque doloribus repudiandae est.'} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <TestimonialsCard user='Beltrano Fulano' role={'Tech leader'} team_role={'Lider de equipe'} testimonial={'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore earum, quidem quo veritatis nam rem dolor omnis incidunt laboriosam itaque optio temporibus, quaerat, molestiae esse. Recusandae, quo voluptatem? Earum fuga ullam voluptates culpa optio aliquid totam necessitatibus voluptatibus, iure magnam praesentium repudiandae asperiores tempora, aut veritatis neque quibusdam, pariatur cum. Totam eos iusto cupiditate ea sunt at nemo deserunt aut nam ipsa officiis natus aliquid, autem, rerum temporibus eius laudantium. Accusantium omnis aperiam vero, excepturi explicabo id ducimus, tenetur, fuga consequatur harum consectetur quis est sint commodi aut ullam eaque! Sequi veniam dolore, impedit eveniet ducimus sunt suscipit natus non?'} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <TestimonialsCard user={'Fulano Ciclano'} role={'Desenvolvedor'} team_role={"Parceiro de equipe"} testimonial={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus corporis molestiae ab accusamus itaque eveniet cum in repudiandae autem, sed deserunt harum quam voluptatum soluta delectus? Nostrum quidem inventore reprehenderit explicabo ex debitis consectetur, consequuntur placeat nam, sunt numquam possimus amet, deleniti veniam autem vero? Corporis neque doloribus repudiandae est.'} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <TestimonialsCard user='Beltrano Fulano' role={'Tech leader'} team_role={'Lider de equipe'} testimonial={'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore earum, quidem quo veritatis nam rem dolor omnis incidunt laboriosam itaque optio temporibus, quaerat, molestiae esse. Recusandae, quo voluptatem? Earum fuga ullam voluptates culpa optio aliquid totam necessitatibus voluptatibus, iure magnam praesentium repudiandae asperiores tempora, aut veritatis neque quibusdam, pariatur cum. Totam eos iusto cupiditate ea sunt at nemo deserunt aut nam ipsa officiis natus aliquid, autem, rerum temporibus eius laudantium. Accusantium omnis aperiam vero, excepturi explicabo id ducimus, tenetur, fuga consequatur harum consectetur quis est sint commodi aut ullam eaque! Sequi veniam dolore, impedit eveniet ducimus sunt suscipit natus non?'} />
-              </SwiperSlide>
+                <TestimonialsCard user={'Paulo Bento'} role={'Desenvolvedor'} team_role={"Colega de faculdade"} testimonial={`Trabalhei com o Marcos no projeto final da faculdade e fiquei impressionado com sua dedicação, criatividade e habilidades excepcionais em desenvolvimento front-end.
 
+                Marcos é extremamente comprometido e sempre busca ir além do esperado. Sua habilidade em front-end é notável e sua capacidade de transformar conceitos em interfaces atrativas e funcionais é impressionante. Além disso, a determinação e a persistência de Marcos são contagiantes. Ele nunca se contenta com o básico e está sempre disposto a ir além para entregar resultados de qualidade. Sua atitude pró-ativa e sua disposição para enfrentar desafios são verdadeiramente inspiradoras.
+
+                Durante nosso trabalho juntos, pude perceber que Marcos é um excelente colaborador de equipe. Sua capacidade de comunicação clara e eficaz, combinada com seu profissionalismo, torna o ambiente de trabalho muito mais agradável e produtivo.
+
+                Recomendo Marcos sem hesitação e acredito que ele será um profissional valioso para qualquer equipe ou empresa. Parabéns pelo seu trabalho incrível, Marcos, e desejo muito sucesso em sua carreira futura!`} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <TestimonialsCard user='Paulo Silva' role={'Designer Gráfico'} team_role={'Colega de equipe'} testimonial={`Durante o tempo que trabalhei em conjunto com o Marcos na Empresa Fox Digital, tive o prazer de conhecer o profissional excelente e aplicado que ele é.
+
+                Marcos é um profissional atento aos detalhes e que busca passar as informações da forma mais clara possível. Seus projetos desenvolvidos durante o tempo que passou na empresa sempre foram otimizados e atendiam as deadlines propostas por nossos superiores.
+
+                Concluindo, Marcos tem um perfil excelente que se encaixaria bem em qualquer empresa que busca um funcionário dedicado e interessado em desenvolver suas soft skills e hard skills.`} />
+              </SwiperSlide>
             </Swiper>
           </div>
           {/* 
