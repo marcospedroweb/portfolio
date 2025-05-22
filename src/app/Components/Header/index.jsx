@@ -14,7 +14,7 @@ export function Header() {
   return (
     <header className="w-full h-screen bg-hero-custom">
       <div className="fixed top-0 left-0 right-0 bg-[#212121] z-10 w-full">
-        <nav className="flex flex-col md:flex-row justify-center md:justify-between items-center md:container py-3 md:gap-0 w-full max-md:px-5">
+        <nav className="flex flex-col items-center justify-center w-full py-3 md:flex-row md:justify-between md:container md:gap-0 max-md:px-5">
           <h1 className="sr-only">Marcos Pedro</h1>
           <div className="md:hidden">
             <NameReveal name={'Marcos'} />
@@ -46,8 +46,8 @@ export function Header() {
 
         <div className="border-t border-[rgba(111,110,110,0.5)]"></div>
       </div>
-      <div className="container relative flex justify-center items-center h-screen max-md:text-center">
-        <div className="flex flex-col-reverse md:flex-row justify-center md:justify-between items-center w-full">
+      <div className="container relative flex items-center justify-center h-screen max-md:text-center">
+        <div className="flex flex-col-reverse items-center justify-center w-full md:flex-row md:justify-between">
           <div className="text-white">
             <span className="text-[1.5rem] md:text-[2.4rem] font-medium font-[Montserrat]">
               Olá, me chamo
@@ -87,14 +87,17 @@ export function Header() {
               }
               alt="Descrição da imagem"
               layout="intrinsic"
-              className="object-cover z-0"
+              className="z-0 object-cover"
               width={500}
               height={550}
             />
           </div>
-          <span className="absolute left-1/2 -translate-x-1/2 bottom-0 md:bottom-4">
-            <IconArrowDown className="w-13 h-14 hover:scale-125 transition-all duration-300 cursor-pointer" />
-          </span>
+          <a
+            href="#Sobre"
+            className="absolute bottom-0 -translate-x-1/2 left-1/2 md:bottom-4"
+          >
+            <IconArrowDown className="transition-all duration-300 cursor-pointer w-13 h-14 hover:scale-125" />
+          </a>
           <SociaisHeader />
         </div>
       </div>
