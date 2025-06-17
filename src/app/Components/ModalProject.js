@@ -6,7 +6,7 @@ import { skills } from '../sections/Skills';
 
 const ModalProject = ({ isOpen, setIsOpen, info, icons }) => {
   const modalRef = useRef(null);
-  const { image, title, date, description, linkProject, linkGithub } = info;
+  const { image, title, date, description, linkProject, linkGithub, linkFigma } = info;
 
   if (!isOpen) return null;
 
@@ -68,7 +68,7 @@ const ModalProject = ({ isOpen, setIsOpen, info, icons }) => {
             </ul>
           </div>
 
-          <div className="flex gap-4 mt-3">
+          <div className="flex flex-col gap-4 mt-3 md:flex-row">
             {linkProject && <a
               href={linkProject}
               target="_blank"
@@ -83,6 +83,14 @@ const ModalProject = ({ isOpen, setIsOpen, info, icons }) => {
               className="px-4 py-2 font-semibold text-white transition bg-green-800 rounded hover:bg-green-700"
             >
               GitHub
+            </a>}
+
+            {linkFigma && <a
+              href={linkFigma}
+              target="_blank"
+              className="px-4 py-2 font-semibold text-white transition bg-green-800 rounded hover:bg-green-700"
+            >
+              Protótipo
             </a>}
           </div>
         </div>

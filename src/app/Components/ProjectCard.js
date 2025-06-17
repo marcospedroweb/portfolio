@@ -1,5 +1,4 @@
 'use client'
-import { default as IconHtml5 } from '@/app/icons/html5.svg';
 import ModalProject from './ModalProject';
 import { useState } from 'react';
 import { skills } from '../sections/Skills';
