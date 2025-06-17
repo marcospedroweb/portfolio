@@ -11,9 +11,9 @@ const Experience = () => {
 
   return (
     <div className='bg-[#1E1E1E] py-16'>
-      <div className="container text-center px-6 scroll-mt-32" id="Experiência">
+      <div className="container px-6 text-center scroll-mt-32" id="Experiência">
         <MainHeading text="Experiência" />
-        <div className="flex justify-center items-center gap-11 mb-14">
+        <div className="flex items-center justify-center gap-11 mb-14">
           <h4
             className={`text-xl cursor-pointer transition-all duration-200 ease-in border-b-4 ${section === 'Formação' ? underlineTextStyle : 'border-b-transparent text-white'
               } ${underlineTextStyleHover}`}
