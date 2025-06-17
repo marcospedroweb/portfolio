@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfólio Pessoal
 
-## Getting Started
+Site pessoal desenvolvido com Next.js e Tailwind CSS para apresentar perfil, habilidades, certificações, experiências e projetos.
 
-First, run the development server:
+## O que foi praticado e aprendido
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Neste projeto, pratiquei o desenvolvimento de aplicações com React e Next.js, além da estilização moderna utilizando Tailwind CSS. Aprimorei conceitos de SSR (Server Side Rendering) e SSG (Static Site Generation) do Next.js, além de organização de componentes, gerenciamento de estados simples e acessibilidade. Também desenvolvi habilidades na criação de layouts responsivos e na integração com ferramentas de design, mantendo alinhamento com protótipos no Figma.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Seções
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Sobre
+- Habilidades
+- Certificações
+- Experiência
+- Projetos
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Como executar localmente
 
-## Learn More
+1. Clone o repositório:  
+   `git clone https://github.com/marcospedroweb/portfolio-website.git`
+2. Acesse o diretório:  
+   `cd portfolio-website`
+3. Instale as dependências:  
+   `npm install`
+4. Inicie o servidor de desenvolvimento:  
+   `npm run dev`
 
-To learn more about Next.js, take a look at the following resources:
+## Tecnologias utilizadas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js
+- Tailwind CSS
+- TypeScript
+- React
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Acesse o projeto online
 
-## Deploy on Vercel
+[Link para o projeto hospedado](https://marcospedroweb.vercel.app/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Protótipo no Figma
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[Link para o protótipo no Figma](https://www.figma.com/design/w6l1sSWAryWJXRMsdOe0Of/Portfolio?node-id=0-1&t=H7jtltNAsJRsg3Kx-1)
