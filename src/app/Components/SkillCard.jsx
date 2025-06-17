@@ -8,6 +8,7 @@ import { default as IconTypescript } from '@/app/icons/typescript.svg';
 import { default as IconReactjs } from '@/app/icons/reactjs.svg';
 import { default as IconNextjs } from '@/app/icons/nextjs.svg';
 import { default as IconNodejs } from '@/app/icons/nodejs.svg';
+import { default as IconTailwindCSS } from '@/app/icons/tailwindcss.svg';
 import { default as IconNestjs } from '@/app/icons/nestjs.svg';
 import { default as IconVitejs } from '@/app/icons/vitejs.svg';
 import { default as IconRedux } from '@/app/icons/redux.svg';
@@ -25,6 +26,7 @@ const icons = {
   nextjs: IconNextjs,
   nodejs: IconNodejs,
   nestjs: IconNestjs,
+  tailwindcss: IconTailwindCSS,
   vitejs: IconVitejs,
   redux: IconRedux,
   bootstrap: IconBootstrap,
@@ -47,6 +49,7 @@ const SkillCard = ({ name = 'html', size = 'default' }) => {
     nextjs: 'fill-[#000000]',
     nodejs: 'fill-[#339933]',
     nestjs: 'text-[#E0234E]',
+    tailwindcss: 'text-[#38BDF8]',
     vitejs: 'text-[#646CFF]',
     redux: 'fill-[#764ABC]',
     bootstrap: 'text-[#7952B3]',
@@ -61,6 +64,7 @@ const SkillCard = ({ name = 'html', size = 'default' }) => {
     'nestjs',
     'vitejs',
     'bootstrap',
+    'tailwindcss',
   ].includes(iconName);
 
   const isSmall = size === 'small';
@@ -91,7 +95,7 @@ const SkillCard = ({ name = 'html', size = 'default' }) => {
         !isSmall && <span className="text-white">?</span>
       )}
       {!isSmall && (
-        <p className="text-white text-xs font-medium mt-2 text-center">
+        <p className="mt-2 text-xs font-medium text-center text-white">
           {name}
         </p>
       )}

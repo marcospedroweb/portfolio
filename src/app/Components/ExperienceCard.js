@@ -4,17 +4,17 @@ const ExperienceCard = ({ date, actual, title, company, jobType, description }) 
   const isList = description.includes('\n');
 
   return (
-    <div className='flex flex-col md:flex-row justify-center items-start gap-5'>
-      <div className=' justify-center items-start gap-8 hidden md:flex'>
+    <div className='flex flex-col items-start justify-center gap-5 md:flex-row'>
+      <div className='items-start justify-center hidden gap-8 md:flex'>
         <div className="
           relative inline-block bg-[#3A3A3A] text-white px-4 py-2 text-sm rounded-l-sm mt-[-5px] after:content-[''] after:absolute after:top-1/2 after:right-[-20px] after:-translate-y-1/2 after:border-y-[18.5px] after:border-l-[20px] after:border-y-transparent after:border-l-[#3A3A3A]
 
         ">
           <span>{formatDateRange(date.start, date.end)}</span>
         </div>
-        <div className='flex flex-row md:flex-col justify-center items-center'>
+        <div className='flex flex-row items-center justify-center md:flex-col'>
           <div className={`w-6 h-6 ${actual ? '' : 'rounded-full'} bg-[#3DA661] mb-4`}></div>
-          <div className='w-20 md:w-1 h-1 md:h-60 bg-white'></div>
+          <div className='w-20 h-1 bg-white md:w-1 md:h-60'></div>
         </div>
       </div>
 
@@ -25,7 +25,7 @@ const ExperienceCard = ({ date, actual, title, company, jobType, description }) 
         ">
           <span>{formatDateRange(date.start, date.end)}</span>
         </div>
-        <h5 className='font-bold text-3xl text-white mb-2'>{title}</h5>
+        <h5 className='mb-2 text-3xl font-bold text-white'>{title}</h5>
         <p className='font-[Montserrat] text-xl text-white mb-4'>{company} | {jobType}</p>
 
         {isList ? (

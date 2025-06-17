@@ -10,6 +10,10 @@ export function formatDateRange(startDate, endDate = null) {
     return `${month} ${year}`;
   };
 
+  if (endDate === 'unique') {
+    return format(startDate);
+  }
+
   const start = format(startDate);
   const end = endDate ? format(endDate) : "atualmente";
 
