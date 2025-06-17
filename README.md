@@ -4,7 +4,7 @@ Site pessoal desenvolvido com Next.js e Tailwind CSS para apresentar perfil, hab
 
 ## O que foi praticado e aprendido
 
-Neste projeto, pratiquei o desenvolvimento de aplicações com React e Next.js, além da estilização moderna utilizando Tailwind CSS. Aprimorei conceitos de SSR (Server Side Rendering) e SSG (Static Site Generation) do Next.js, além de organização de componentes, gerenciamento de estados simples e acessibilidade. Também desenvolvi habilidades na criação de layouts responsivos e na integração com ferramentas de design, mantendo alinhamento com protótipos no Figma.
+Neste projeto, pratiquei o desenvolvimento de aplicações com React e Next.js, além da estilização moderna utilizando Tailwind CSS. Aprimorei conceitos do Next.js, além de organização de componentes. Também desenvolvi habilidades na criação de layouts responsivos e na integração com ferramentas de design, mantendo alinhamento com protótipos no Figma.
 
 ## Seções
 
