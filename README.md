@@ -17,9 +17,9 @@ Neste projeto, pratiquei o desenvolvimento de aplicações com React e Next.js, 
 ## Como executar localmente
 
 1. Clone o repositório:  
-   `git clone https://github.com/marcospedroweb/portfolio-website.git`
+   `git clone https://github.com/marcospedroweb/portfolio`
 2. Acesse o diretório:  
-   `cd portfolio-website`
+   `cd portfolio`
 3. Instale as dependências:  
    `npm install`
 4. Inicie o servidor de desenvolvimento:  
@@ -29,8 +29,10 @@ Neste projeto, pratiquei o desenvolvimento de aplicações com React e Next.js, 
 
 - Next.js
 - Tailwind CSS
-- TypeScript
-- React
+- HTML
+- CSS
+- Javascript
+- Figma
 
 ## Acesse o projeto online
 
