@@ -13,9 +13,9 @@ export const skills = [
 export function Skills() {
   return (
     <div className='bg-[#222] py-24'>
-      <div className="container scroll-mt-32" id="Habilidades">
+      <div className="container scroll-mt-32" id="Habilidades" data-aos="fade-down">
         <MainHeading text="Habilidades" />
-        <div className="flex flex-wrap items-center justify-center max-w-4xl gap-3 mx-auto">
+        <div className="flex flex-wrap items-center justify-center max-w-4xl gap-3 mx-auto" data-aos="fade-up">
           {skills.map((skill) => (
             <SkillCard key={skill} name={skill} />
           ))}

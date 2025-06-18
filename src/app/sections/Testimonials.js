@@ -9,7 +9,7 @@ import TestimonialsCard from "../Components/TestimonialsCard";
 export function Testimonials() {
   return (
     <div className='bg-[#1E1E1E] pt-16 pb-16'>
-      <div className="container px-6 text-center">
+      <div className="container px-6 text-center" data-aos="fade-down">
         <MainHeading text="Depoimentos" />
         <div className="flex flex-row gap-4">
           <div className="w-full">

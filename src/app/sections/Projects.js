@@ -5,8 +5,8 @@ import ProjectCard from '../Components/ProjectCard'
 const Projects = () => {
   return (
     <div className='bg-[#252525] py-16'>
-      <div className="container px-6 text-center scroll-mt-32" id="Projetos">
-        <MainHeading text="Projetos" />
+      <div className="container px-6 text-center scroll-mt-32" id="Projetos" >
+        <MainHeading text="Projetos" fade='fade-down' />
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
           <ProjectCard icons={['Html5', 'Css3', 'JavaScript', 'ReactJS', 'Bootstrap', 'Figma']} infoProject={{
             image: 'projeto-portfolio.png',

@@ -1,9 +1,8 @@
 import React from 'react'
 
-const MainHeading = ({ text }) => {
+const MainHeading = ({ text, fade = '' }) => {
   return (
-    <h3 className="font-bold text-5xl mb-12 position w-fit mx-auto
-        underline-center text-white">{text}</h3>
+    <h3 className="mx-auto mb-12 text-5xl font-bold text-white position w-fit underline-center" data-aos={fade}>{text}</h3>
   )
 }
 

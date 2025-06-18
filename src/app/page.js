@@ -1,3 +1,5 @@
+"use client";
+
 import AboutMe from "./sections/AboutMe";
 import Certifications from "./sections/Certifications";
 import Experience from "./sections/Experience";
@@ -5,8 +7,15 @@ import Footer from "./sections/Footer";
 import Projects from "./sections/Projects";
 import { Skills } from "./sections/Skills";
 import { Testimonials } from "./sections/Testimonials";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true, delay: 100, });
+  }, []);
+
   return (
     <div>
       <main className="w-full">

@@ -71,14 +71,18 @@ export function Header() {
               target="_blank"
               className="
               px-5 py-3 border-[3px] border-[#3DA661] rounded-lg text-primary-light font-bold box-border block w-fit
-              hover:bg-[#3DA661] hover:text-white transition-all ease-in duration-
+              hover:bg-[#3DA661] hover:text-white transition-all ease-in duration-500
               max-md:mx-auto
             "
+              data-aos="fade-right"
             >
               Entrar em contato
             </a>
           </div>
-          <div className="relative w-[80%] px-5 md:px-0 sm:w-[400px] h-auto z-0 max-md:mb-6">
+          <div
+            className="relative w-[80%] px-5 md:px-0 sm:w-[400px] h-auto z-0 max-md:mb-6"
+            data-aos="fade-left"
+          >
             <Image
               src={
                 isMobile

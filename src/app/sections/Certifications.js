@@ -5,7 +5,7 @@ import MainHeading from '../Components/MainHeading'
 const Certifications = () => {
   return (
     <div className='bg-[#222] py-24 pb-40'>
-      <div className="container px-7 scroll-mt-32" id="Certificados">
+      <div className="container px-7 scroll-mt-32" id="Certificados" data-aos="fade-down">
         <MainHeading text="Certificações" />
         <div className='flex flex-wrap justify-center gap-2 md:gap-6'>
           <CertificationCard name={'Tailwind CSS'} company={'ORIGAMID'} date={new Date('2025-03-27')} time={"16h"} link={"https://www.origamid.com/certificate/81038a1c"} />

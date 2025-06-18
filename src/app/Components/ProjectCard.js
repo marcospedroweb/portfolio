@@ -10,7 +10,7 @@ const ProjectCard = ({ icons = [], infoProject = {} }) => {
 
 
   return (
-    <div className={`relative w-full h-64 bg-cover bg-center group cursor-pointer`} onClick={() => setIsOpen(true)} style={{ backgroundImage: `url('/imgs/${image}')` }}>
+    <div className={`relative w-full h-64 bg-cover bg-center group cursor-pointer`} onClick={() => setIsOpen(true)} style={{ backgroundImage: `url('/imgs/${image}')` }} >
       <div className="absolute inset-0 transition-all duration-200 ease-in bg-black bg-opacity-60 group-hover:bg-opacity-80"></div>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center">

@@ -4,7 +4,7 @@ const ExperienceCard = ({ date, actual, title, company, jobType, description }) 
   const isList = description.includes('\n');
 
   return (
-    <div className='flex flex-col items-start justify-center gap-5 md:flex-row'>
+    <div className='flex flex-col items-start justify-center gap-5 md:flex-row' data-aos="fade-right">
       <div className='items-start justify-center hidden gap-8 md:flex'>
         <div className="
           relative inline-block bg-[#3A3A3A] text-white px-4 py-2 text-sm rounded-l-sm mt-[-5px] after:content-[''] after:absolute after:top-1/2 after:right-[-20px] after:-translate-y-1/2 after:border-y-[18.5px] after:border-l-[20px] after:border-y-transparent after:border-l-[#3A3A3A]
