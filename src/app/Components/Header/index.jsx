@@ -64,7 +64,7 @@ export function Header() {
             />
 
             <p className="font-[Montserrat] text-xl text-[#828282] mb-10">
-              Desenvolvedor FullStack
+              Desenvolvedor FrontEnd
             </p>
             <a
               href="https://wa.me/+5511980950160"
