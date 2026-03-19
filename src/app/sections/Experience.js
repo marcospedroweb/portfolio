@@ -52,22 +52,9 @@ const Experience = () => {
               `}
             />
             <ExperienceCard
-              date={{ start: new Date(2022, 9, 1), end: new Date(2023, 5, 1) }}
-              actual={false}
-              title="Desenvolvedor FrontEnd"
-              company="Catency"
-              jobType="Freelance"
-              description={`
-            - Desenvolvimento de aplicações web com Next.js, estruturando projetos completos com foco em performance e organização.
-            - Integração com APIs para construção de funcionalidades dinâmicas e escaláveis.
-            - Criação de interfaces responsivas com atenção à experiência do usuário e boas práticas de desenvolvimento.
-            - Utilização de HTML, CSS, JavaScript e Bootstrap no desenvolvimento das interfaces.
-          `}
-            />
-            <ExperienceCard
               date={{
-                start: new Date('2022-10-01'),
-                end: new Date('2023-06-01'),
+                start: new Date('2023-02-01'),
+                end: new Date('2023-07-01'),
               }}
               actual={false}
               title="Desenvolvedor FrontEnd"
@@ -78,6 +65,19 @@ const Experience = () => {
             - Integração com APIs para viabilizar funcionalidades dinâmicas nas aplicações.
             - Configuração e integração de ferramentas de análise e marketing, como Google Tag Manager (GTM) e Meta Pixel, contribuindo para o monitoramento de desempenho e otimização de campanhas.
             `}
+            />
+            <ExperienceCard
+              date={{ start: new Date(2022, 9, 1), end: new Date(2022, 11, 1) }}
+              actual={false}
+              title="Desenvolvedor FrontEnd"
+              company="Catency"
+              jobType="Freelance"
+              description={`
+            - Desenvolvimento de aplicações web com Next.js, estruturando projetos completos com foco em performance e organização.
+            - Integração com APIs para construção de funcionalidades dinâmicas e escaláveis.
+            - Criação de interfaces responsivas com atenção à experiência do usuário e boas práticas de desenvolvimento.
+            - Utilização de HTML, CSS, JavaScript e Bootstrap no desenvolvimento das interfaces.
+          `}
             />
           </div>
         ) : (
