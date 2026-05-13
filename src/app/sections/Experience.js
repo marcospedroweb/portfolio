@@ -45,11 +45,13 @@ const Experience = () => {
               company="Scapets Brasil"
               jobType="Tempo integral"
               description={`
-            - Desenvolvimento e manutenção de interfaces web responsivas utilizando ReactJS, com foco em performance e experiência do usuário.
+            - Desenvolvimento e manutenção de aplicações web com ReactJS e TypeScript, focando em performance, responsividade e experiência do usuário.
             - Desenvolvimento de aplicativos móveis com React Native, garantindo usabilidade e consistência entre plataformas.
             - Integração com APIs e colaboração na construção de serviços backend utilizando NestJS (Node.js).
             - Utilização de TypeScript para maior segurança, organização e escalabilidade do código.
+            - Atuação em ambiente ágil (Scrum), participando de code reviews e alinhamentos técnicos.
               `}
+              careerPathLine={'md:h-[20rem]'}
             />
             <ExperienceCard
               date={{
@@ -82,19 +84,6 @@ const Experience = () => {
           </div>
         ) : (
           <div className="flex flex-col max-w-5xl gap-12 mx-auto">
-            <ExperienceCard
-              date={{
-                start: new Date('2026-03-01'),
-                end: new Date('2028-03-01'),
-              }}
-              actual={false}
-              title="Tecnologia em Design Gráfico"
-              company="UNASP"
-              jobType="Graduação"
-              description={`
-            Durante a graduação em Design Gráfico, venho desenvolvendo conhecimentos em fundamentos do design, como composição visual, tipografia e teoria das cores. Buscando aplicar esses conceitos na construção de soluções digitais mais intuitivas e visualmente consistentes.
-            `}
-            />
             <ExperienceCard
               date={{
                 start: new Date('2021-02-01'),
