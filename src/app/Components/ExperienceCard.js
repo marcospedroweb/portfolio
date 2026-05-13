@@ -29,7 +29,9 @@ const ExperienceCard = ({
           <div
             className={`w-6 h-6 ${actual ? '' : 'rounded-full'} bg-[#3DA661] mb-4`}
           ></div>
-          <div className={`w-20 h-1 bg-white md:w-1 md:h-[17rem]`}></div>
+          <div
+            className={`w-20 h-1 bg-white md:w-1 ${careerPathLine ? careerPathLine : 'md:h-[17rem]'} `}
+          ></div>
         </div>
       </div>
 
