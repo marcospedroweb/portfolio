@@ -12,18 +12,19 @@ const AboutMe = () => {
         <MainHeading text="Sobre mim" />
         <p className="text-[rgba(255, 255, 255, 0.5)] mb-6 max-w-lg mx-auto">
           {' '}
-          Sou uma pessoa criativa, com grande interesse por leitura e escrita de
-          poesias. Nas horas vagas, gosto de me aventurar na poesia, no desenho,
-          na pintura, além de praticar academia e artes marciais.
+          Sou desenvolvedor Full Stack com foco em React e Node.js, atuando há
+          mais de 2 anos no desenvolvimento de aplicações web modernas,
+          responsivas e escaláveis. Tenho experiência na construção de
+          interfaces utilizando React, Next.js e TypeScript, além de integrações
+          backend com Node.js (NestJS) e APIs REST.
         </p>
         <p className="text-[rgba(255, 255, 255, 0.5)] mb-6 max-w-lg mx-auto">
           {' '}
-          Há pouco mais de dois anos, atuo como desenvolvedor Front-End,
-          aplicando minha experiência e buscando inovação na criação de
-          interfaces modernas e sistemas. Tenho paixão por transformar ideias em
-          soluções digitais funcionais e bem estruturadas. Estou sempre em busca
-          de aprender algo novo, aprimorar minhas habilidades e entregar o
-          melhor desempenho em cada projeto.
+          Busco criar soluções funcionais, organizadas e performáticas, sempre
+          priorizando qualidade de código, usabilidade e boas práticas de
+          desenvolvimento. Fora da tecnologia, gosto de poesia, desenho,
+          pintura, academia e artes marciais, atividades que fortalecem minha
+          criatividade e disciplina.
         </p>
         <div
           className="flex flex-wrap justify-center items-center gap-4 divide-y md:divide-y-0 md:divide-x-2 divide-[#222]"
